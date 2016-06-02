@@ -29,7 +29,7 @@ RUN curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
 RUN apt-get install -y nodejs
 
 # Install Nuclide Remote Server
-RUN npm install -g nuclide
+RUN npm install -g nuclide@0.140.0
 
 # Start ssh service
 CMD ["/usr/sbin/sshd", "-D"]
